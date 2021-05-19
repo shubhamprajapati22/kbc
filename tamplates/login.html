@@ -1,49 +1,38 @@
-{% extends "base.html" %}
-{% load static %}
-{% block link %} <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}"> {% endblock link %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login Form Design | Code4Education</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+  </head>
+  <body> 
+    <div class="wrapper">
+      <div class="title">Login Form</div>
+      <form action="#">
+        <div class="field">
+          <input type="text" required>
+          <label>Email Address</label>
+        </div>
+        <div class="field">
+          <input type="password" required>
+          <label>Password</label>
+        </div>
+        <div class="content">
+          <div class="checkbox">
+            <input type="checkbox" id="remember-me">
+            <label for="remember-me">Remember me</label>
+          </div>
+          <div class="pass-link"><a href="#">Forgot password?</a></div>
+        </div>
+        <div class="field">
+          <input type="submit" value="Login">
+        </div>
+        <div class="signup-link">Not a membat? <a href="#">Signup now</a></div>
+      </form>
+    </div>
 
-<script src="{% static '/js/login.js' %}"></script> 
-{% block title %} LOG IN  {% endblock title %}
-
-{% block body %}
-
-  
-<div id="box">
-  
-  <div id="title"><b>LOGIN PANEL</b></div>
-  
-  <input placeholder="Login" type="text" id="login"></input>
-<input placeholder="Password" type="password" id="password"></input>
-
-<button id="btn" type="button"><b>LOGIN</b></button>
-
-<div onclick="REGISTER()" id="crt">Dont't have an account. Create.</div>
-  
-</div>
-
-
-
-<div id="boxr">
-  
-  <div id="title2"><b>REGISTER PANEL</b></div>
-  
-  <input placeholder="Login" type="text" id="login2"></input>
-<input placeholder="E-mail" type="email" id="mail"></input>
-<input placeholder="Password" type="password" id="password2"></input>
-
-<button id="btn2" type="button"><b>REGISTER</b></button>
-
-<div onclick="LOGIN()" id="lgn">Have an account. Login.</div>
-  
-</div>
+  </body>
+</html>
 
 
-<h2>kjfzkjgfjsgf</h2>
-<h2>kjfzkjgfjsgf</h2>
-<h2>kjfzkjgfjsgf</h2>
-<h2>kjfzkjgfjsgf</h2>
-<h2>kjfzkjgfjsgf</h2>
-<h2>kjfzkjgfjsgf</h2>
-<h2>kjfzkjgfjsgf</h2>
-<h2>kjfzkjgfjsgf</h2>
-{% endblock body %}
