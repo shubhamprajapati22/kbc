@@ -272,6 +272,8 @@ input[type="checkbox"]{
 
 
 
+
+
 #title-Tag-Line {
   font-size: 20px;
 }
@@ -289,8 +291,17 @@ input[type="checkbox"]{
 } 
 
 /* form animation starts */
+.resp{
+  max-width: 90%;
+  align-items: center;
+}
+.wrapper{
+  
+  margin-left: 20px;
+}
 .form {
   background: #fff;
+  max-width: 70%;
   box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
   border-radius: 5px;
   max-width: 480px;
@@ -363,7 +374,7 @@ input[type="checkbox"]{
 .formEntry {
   display: block;
   margin: 30px auto;
-  min-width: 300px;
+  max-width: 200px;
   padding: 10px;
   border-radius: 2px;
   border: none;
@@ -393,6 +404,12 @@ input[type="checkbox"]{
     transform: translate(0, 8px);
   }
 } 
+
+
+
+
+
+
 
 
 
