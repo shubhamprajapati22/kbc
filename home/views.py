@@ -7,8 +7,7 @@ def home(request):
 def game(request):
     return render(request, "game.html")
 
-def login(request):
-    return render(request, "login.html")
+
 
 def contact(request):
     return render(request, "contact.html")
@@ -16,5 +15,4 @@ def contact(request):
 def profile(request):
     return render(request, "profile.html")
 
-def signup(request):
-    return render(request,"signup.html")
+
